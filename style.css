@@ -19,6 +19,10 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.navbar-brand img{
+    width: 150px;
+}
+
 .scrolled .nav-link {
     color: white !important;
 }
@@ -31,6 +35,7 @@
     position: relative;
     margin-inline: 15px;
     margin-block: 8px;
+    color: #fff;
 }
 
 .navbar li .nav-link::before {
@@ -53,9 +58,9 @@
     visibility: visible;
 }
 
-@media screen and (max-width:992px){
-    .navbar-esconde{
-        top: -20px;
+@media screen and (max-width:992px) {
+    .navbar-esconde {
+        top: -5px;
     }
 }
 
@@ -65,7 +70,7 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
-    background: linear-gradient(to right, #ff6f61, #de64a0);
+    background: linear-gradient(to right, #FFD700, #877403);
     color: white;
     text-align: center;
     display: flex;
@@ -123,6 +128,10 @@
     border-top: 5px solid #fff;
 }
 
+.sobre-nos img{
+    border-radius: 50px 20px 50px 5px;
+}
+
 .missao {
     display: flex;
     justify-content: space-around;
@@ -153,11 +162,11 @@
 
 .box-missao:hover i {
     background-color: rgba(25, 25, 25, 0);
-    color: #ff6f61;
+    color: #FFD700;
 }
 
 .box-missao h3 {
-    color: #ff6f61;
+    color: #FFD700;
     margin-block: 10px;
 }
 
@@ -200,7 +209,7 @@
     width: 100%;
     max-width: 350px;
     border-radius: 10px;
-    background-color: #ff6f61;
+    background-color: #FFD700;
     padding: 15px;
     padding-bottom: none;
     position: relative;
@@ -216,8 +225,9 @@
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #de64a0;
+    background-color: #8B4513;
     transition: width 0.5s ease;
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -226,7 +236,8 @@
 }
 
 .box-servicos:hover {
-    background-color: #ff6f61;
+    border-radius: 10px;
+    background-color: #FFD700;
 }
 
 .title-servicos,
@@ -257,8 +268,8 @@
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: -35px;
-    border: 1px solid #ff6f61;
-    background-color: #de64a0;
+    border: 1px solid #8B4513;
+    background-color: #8B4513;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
@@ -266,8 +277,8 @@
 }
 
 .box-servicos:hover .btn {
-    border: 1px solid #de64a0;
-    background-color: #ff6f61;
+    border: 1px solid #FFD700;
+    background-color: #FFD700;
 }
 
 /* Avaliação */
@@ -304,7 +315,8 @@
     width: 50px;
 }
 
-#prev, #next {
+#prev,
+#next {
     position: absolute;
     top: 40%;
     color: #060000;
@@ -326,11 +338,15 @@
 
 @media screen and (max-width: 992px) {
     #prev {
-        left: 0;
+        font-size: xx-large;
+        left: 150px;
+        bottom: -50%;
     }
 
     #next {
-        right: 0;
+        font-size: xx-large;
+        bottom: -50%;
+        right: 150px;
     }
 }
 
@@ -352,7 +368,7 @@
 .item-galeria img {
     object-position: center;
     object-fit: cover;
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    width: 400px;
     height: 250px;
     display: block;
 }
@@ -365,21 +381,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    pointer-events: none; /* Permite clicar na imagem abaixo */
-}
-
-@media screen and (max-width: 992px) {
-    .item-galeria {
-        flex: 1 1 calc(50% - 20px); /* Ajusta a largura dos itens da galeria para 50% em telas menores */
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .item-galeria {
-        flex: 1 1 calc(100% - 20px); /* Ajusta a largura dos itens da galeria para 100% em telas ainda menores */
-        max-width: calc(100% - 20px);
-    }
+    pointer-events: none;
 }
 
 
@@ -441,6 +443,7 @@
     border-top: 5px solid #f8f9fa;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
+
 .footer h5 {
     color: #ffffff;
     margin-bottom: 20px;
@@ -448,25 +451,31 @@
     border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
 }
+
 .footer .nav-link {
     color: #ffffff;
     text-decoration: none;
 }
+
 .footer .nav-link:hover {
     color: #d1d1d1;
 }
+
 .footer .contact-item a {
     color: #ffffff;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
+
 .footer .contact-item a:hover {
     color: #d1d1d1;
 }
+
 .footer .contact-item i {
     margin-right: 10px;
 }
+
 .footer .social-icons a {
     color: #ffffff;
     margin-right: 20px;
@@ -474,12 +483,15 @@
     font-size: 1.8rem;
     transition: color 0.3s ease;
 }
+
 .footer .social-icons a:hover {
     color: #d1d1d1;
 }
+
 .footer .social-icons a i {
     margin-right: 0;
 }
+
 .footer .social-icons a:last-child {
     margin-right: 0;
 }
