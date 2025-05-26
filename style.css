@@ -10,7 +10,7 @@
 }
 
 .navbar-esconde {
-    top: -50px;
+    top: -100px;
     transition: top 0.6s ease-in-out;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .navbar-brand img{
-    width: 150px;
+    width: 100px;
 }
 
 .scrolled .nav-link {
@@ -60,7 +60,7 @@
 
 @media screen and (max-width:992px) {
     .navbar-esconde {
-        top: -5px;
+        top: -75px;
     }
 }
 
@@ -70,7 +70,7 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
-    background: linear-gradient(to right, #FFD700, #877403);
+    background: linear-gradient(to right, #FFAE45, #5f3a0a);
     color: white;
     text-align: center;
     display: flex;
@@ -162,11 +162,11 @@
 
 .box-missao:hover i {
     background-color: rgba(25, 25, 25, 0);
-    color: #FFD700;
+    color: #FFAE45;
 }
 
 .box-missao h3 {
-    color: #FFD700;
+    color: #FFAE45;
     margin-block: 10px;
 }
 
@@ -209,7 +209,7 @@
     width: 100%;
     max-width: 350px;
     border-radius: 10px;
-    background-color: #FFD700;
+    background-color: #FFAE45;
     padding: 15px;
     padding-bottom: none;
     position: relative;
@@ -225,7 +225,7 @@
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #8B4513;
+    background-color: #00CBC7;
     transition: width 0.5s ease;
     border-radius: 10px;
     z-index: 1;
@@ -237,7 +237,7 @@
 
 .box-servicos:hover {
     border-radius: 10px;
-    background-color: #FFD700;
+    background-color: #FFAE45;
 }
 
 .title-servicos,
@@ -268,8 +268,8 @@
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: -35px;
-    border: 1px solid #8B4513;
-    background-color: #8B4513;
+    border: 1px solid #00CBC7;
+    background-color: #00CBC7;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
@@ -277,8 +277,8 @@
 }
 
 .box-servicos:hover .btn {
-    border: 1px solid #FFD700;
-    background-color: #FFD700;
+    border: 1px solid #FFAE45;
+    background-color: #FFAE45;
 }
 
 /* Avaliação */
